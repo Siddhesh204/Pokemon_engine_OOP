@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# C++ Math Engine
+*.so
+*.o
+*.dll
+
+# Node & React
+frontend/node_modules/
+frontend/dist/
+frontend/.eslintcache

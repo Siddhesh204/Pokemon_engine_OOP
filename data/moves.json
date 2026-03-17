@@ -1,0 +1,32 @@
+{
+    "Shadow Ball": {
+        "type": "classic", "element": "GHOST", "category": "SPECIAL", "power": 80, "accuracy": 100, "pp": 15
+    },
+    "Focus Blast": {
+        "type": "classic", "element": "FIGHTING", "category": "SPECIAL", "power": 120, "accuracy": 70, "pp": 5
+    },
+    "Body Slam": {
+        "type": "classic", "element": "NORMAL", "category": "PHYSICAL", "power": 85, "accuracy": 100, "pp": 15
+    },
+    "Fury Swipes": {
+        "type": "combo", "element": "NORMAL", "category": "PHYSICAL", "power": 18, "accuracy": 80, "min_hits": 2, "max_hits": 5, "pp": 15
+    },
+    "Quick Attack": {
+        "type": "classic", "element": "NORMAL", "category": "PHYSICAL", "power": 40, "accuracy": 100, "pp": 30, "priority": 1
+    },
+    "Toxic": {
+        "type": "status", "element": "POISON", "category": "STATUS", "accuracy": 90, "pp": 10, "status": "POISON"
+    },
+    "Hex": {
+        "type": "classic", "element": "GHOST", "category": "SPECIAL", "power": 65, "accuracy": 100, "pp": 10, "doubles_on_status": true
+    },
+    "Thunder Wave": {
+        "type": "status", "element": "ELECTRIC", "category": "STATUS", "accuracy": 90, "pp": 20, "status": "PARALYZE"
+    },
+    "Rain Dance": {
+        "type": "weather", "element": "WATER", "category": "STATUS", "accuracy": 100, "pp": 5, "weather": "RAIN"
+    },
+    "Swords Dance": {
+        "type": "stat_change", "element": "NORMAL", "category": "STATUS", "accuracy": 100, "pp": 20, "stat_name": "attack", "amount": 2, "target_self": true
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "team_name": "Player Red",
+    "members": [
+        {
+            "name": "Gengar",
+            "level": 50,
+            "ability": "None",
+            "item": "None",
+            "moves": ["Shadow Ball", "Focus Blast", "Body Slam", "Fury Swipes"]
+        },
+        {
+            "name": "Snorlax",
+            "level": 50,
+            "ability": "Intimidate",
+            "item": "None",
+            "moves": ["Body Slam", "Fury Swipes"]
+        }
+    ]
+}
