@@ -10,7 +10,7 @@ function App() {
 
   const fetchState = async () => {
     try {
-      const response = await axios.get('http://127.0.0.1:8000/get_battle_state')
+      const response = await axios.get('https://pokemonengineoop-production.up.railway.app/get_battle_state')
       setGameState(response.data)
       if (response.data.player && response.data.player.hp === 0) setMenuTab('switch')
     } catch (error) {
@@ -20,14 +20,14 @@ function App() {
 
   const startGame = async () => {
     setGameOverMsg(null)
-    await axios.post('http://127.0.0.1:8000/start_game')
+    await axios.post('https://pokemonengineoop-production.up.railway.app/start_game')
     fetchState()
     setMenuTab('fight')
   }
 
   const handleAction = async (actionType, actionIndex) => {
     try {
-      const response = await axios.post('http://127.0.0.1:8000/execute_turn', { action_type: actionType, index: actionIndex })
+      const response = await axios.post('https://pokemonengineoop-production.up.railway.app/execute_turn', { action_type: actionType, index: actionIndex })
       if (response.data.status === "game_over") {
         setGameOverMsg(response.data.winner) 
       } else {
